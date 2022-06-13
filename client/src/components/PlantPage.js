@@ -22,6 +22,7 @@ function PlantPage() {
   }
 
   const displayedPlants = plants.filter((plant) => {
+    console.log(plant)
     return plant.name.toLowerCase().includes(searchTerm.toLowerCase());
   });
 
